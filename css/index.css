@@ -261,3 +261,49 @@ textarea {
   }
 }
 
+body {
+  font-family:'Raleway';
+}
+
+.contenedor {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+/**HEADER**/
+.site-header.inicio {
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 60rem;
+}
+
+.navegacion  {
+  display: flex;
+  justify-content: center;
+
+}
+
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 20px;
+  padding: 50px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.navegacion a:hover {
+ color: blue;
+
+ }
+
+
+.navegacion a:last-of-type { /*** PSEUDO SELECTOR //LE QUITA EL MARGIN AL ULTIMO ELEMENTO ***/
+  margin-right: 0;
+}
