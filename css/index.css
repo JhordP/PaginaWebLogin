@@ -295,12 +295,12 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-
+  transition: all .4s ease-in-out;
 }
 
 .navegacion a:hover {
  color: blue;
-
+ transition: all .4s ease-in-out;
  }
 
 

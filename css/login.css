@@ -1,18 +1,60 @@
+body {
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 60rem;
+}
+
+.navegacion  {
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    padding: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-family:'Raleway';
+    transition: all .4s ease-in-out;
+  }
+  
+  .navegacion a:hover {
+    color: blue;
+    transition: all .4s ease-in-out;
+   }
 
 div#login {
     margin: 10em auto;
     width: 33.3%;
-    background-color: #e1e1e1;
+    background-color: lavender;
     padding: 40px 20px 6em 45px;
     border-radius: 10%;
     align-items: center;
+    font-family:'Raleway';
+    font-weight: bolder;
+    opacity: .8;
 }
 #login p {
+    font-size: 3rem;
     text-align: center;
 }
 
 div.usuario  {
-    margin-left: 21px;
+    margin-left: 60px;
+    margin-right: auto;
+    margin-top: 2em;
+}
+div.password {
+    margin-left: 32px;
+    margin-right: auto;
 }
 
 #usuario {
