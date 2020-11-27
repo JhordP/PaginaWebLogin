@@ -17,7 +17,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/login.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -25,7 +25,22 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Login</p>
+  
+    <div id="login">
+      <p>Inicia Sesión</p>
+
+      <div class="usuario">
+      <label for="usuario">Usuario:</label>
+      <input type="text" name="usuario" id="usuario">
+      </div>  
+
+      <div class="password">
+      <label for="password">Contraseña:</label>
+      <input type="text" name="password" id="password">
+      </div>
+      <a href="#" class="boton">Acceder</a>
+    </div>  
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/login.js"></script>

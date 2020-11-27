@@ -1,0 +1,49 @@
+
+div#login {
+    margin: 10em auto;
+    width: 33.3%;
+    background-color: #e1e1e1;
+    padding: 40px 20px 6em 45px;
+    border-radius: 10%;
+    align-items: center;
+}
+#login p {
+    text-align: center;
+}
+
+div.usuario  {
+    margin-left: 21px;
+}
+
+#usuario {
+    margin-bottom: 20px;
+}
+
+#password {
+    margin-bottom: 20px;
+}
+.boton {
+    padding: 10px 15px;
+    border-radius: 10%;
+    color: white;
+    background-color: rgb(94, 17, 94);
+    display: block;
+    width: 25%;
+    text-align: center;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: rgb(70, 13, 70);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
