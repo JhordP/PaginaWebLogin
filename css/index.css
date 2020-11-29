@@ -15,6 +15,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  --scrollbarBG: #a09494;
+  --thumbBG: #5d1963;
 }
 
 /*
@@ -86,6 +88,141 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/**SCROLLBAR**/
+body::-webkit-scrollbar {
+  width: 25px;
+}
+/****************************/
+
+body {
+  font-family:'Raleway';
+  /**SCROLLBAR**/
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+
+}
+
+/**SCROLLBAR**/
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 15px;
+  border: 3px solid var(--scrollbarBG);
+}
+/******************************/
+  
+.contenedor {
+  margin: 0 auto;
+  max-width: 80%;
+}
+  
+/**HEADER**/
+.site-header.inicio {
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 60rem;
+}
+
+/** NAVEGACION **/
+.navegacion  {
+  display: flex;
+  justify-content: center;
+  
+}
+  
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 20px;
+  padding: 50px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  transition: all .4s ease-in-out;
+}
+  
+.navegacion a:hover {
+  color: blue;
+  transition: all .4s ease-in-out;
+}
+  
+  
+.navegacion a:last-of-type { /*** PSEUDO SELECTOR //LE QUITA EL MARGIN AL ULTIMO ELEMENTO ***/
+  margin-right: 0;
+}
+
+/** PARRAFO HEADER **/
+.parrafo-header {
+  color: white;
+  font-size: 50px;
+  padding: 90px 90px 0 90px;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.unete {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  background-color: purple;
+  background-size: 1px;
+  border-radius: 1%;
+}
+.unete a {
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  transition: all .4s ease-in-out;
+}
+
+.unete a:hover {
+  color: rgb(252, 210, 25);
+  transition: all .4s ease-in-out
+}
+
+
+/**FOOTER**/
+.site-footer {
+  background-color: #621176;
+  margin: 0 auto;
+}
+
+.contenido-footer {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 80%;
+}
+
+.navegacion-footer a {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -259,51 +396,4 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-}
-
-body {
-  font-family:'Raleway';
-}
-
-.contenedor {
-  margin: 0 auto;
-  max-width: 80%;
-}
-
-/**HEADER**/
-.site-header.inicio {
-  background-image: url(../img/header.jpg);
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
-  min-height: 60rem;
-}
-
-.navegacion  {
-  display: flex;
-  justify-content: center;
-
-}
-
-.navegacion a {
-  color: white;
-  text-decoration: none;
-  font-size: 30px;
-  margin-right: 20px;
-  padding: 50px;
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-  transition: all .4s ease-in-out;
-}
-
-.navegacion a:hover {
- color: blue;
- transition: all .4s ease-in-out;
- }
-
-
-.navegacion a:last-of-type { /*** PSEUDO SELECTOR //LE QUITA EL MARGIN AL ULTIMO ELEMENTO ***/
-  margin-right: 0;
 }
