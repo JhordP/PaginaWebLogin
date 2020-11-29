@@ -1,91 +1,366 @@
-body {
-  background-image: url(../img/header.jpg);
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
-  min-height: 60rem;
-}
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
-.navegacion  {
-    display: flex;
-    justify-content: center;
-  
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    --scrollbarBG: #a09494;
+    --thumbBG: #5d1963;
   }
   
-  .navegacion a {
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 20px;
-    padding: 50px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    font-family:'Raleway';
-    transition: all .4s ease-in-out;
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
   }
   
-  .navegacion a:hover {
-    color: blue;
-    transition: all .4s ease-in-out;
-   }
-
-div#login {
-    margin: 10em auto;
-    width: 33.3%;
-    background-color: lavender;
-    padding: 40px 20px 6em 45px;
-    border-radius: 10%;
-    align-items: center;
-    font-family:'Raleway';
-    font-weight: bolder;
-    opacity: .8;
-}
-#login p {
-    font-size: 3rem;
-    text-align: center;
-}
-
-div.usuario  {
-    margin-left: 60px;
-    margin-right: auto;
-    margin-top: 2em;
-}
-div.password {
-    margin-left: 32px;
-    margin-right: auto;
-}
-
-#usuario {
-    margin-bottom: 20px;
-}
-
-#password {
-    margin-bottom: 20px;
-}
-.boton {
-    padding: 10px 15px;
-    border-radius: 10%;
-    color: white;
-    background-color: rgb(94, 17, 94);
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
     display: block;
-    width: 25%;
-    text-align: center;
-    margin-top: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+  
+     body {
+        background-image: url(../img/header.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        min-height: 60rem;
+      }
+      
+      .navegacion  {
+          display: flex;
+          justify-content: center;
+        
+        }
+        
+        .navegacion a {
+          color: white;
+          text-decoration: none;
+          font-size: 1.2em;
+          margin-right: 20px;
+          padding: 50px;
+          display: inline-block;
+          text-transform: uppercase;
+          font-weight: 700;
+          text-align: center;
+          font-family:'Raleway';
+          transition: all .4s ease-in-out;
+        }
+        
+        .navegacion a:hover {
+          color: #a09494;
+          transition: all .4s ease-in-out;
+         }
+      
+      div#login {
+          margin: 8rem auto;
+          width: 25%;
+          background-color: rgba(165, 137, 161, 0.658);
+          padding: 3rem 1rem;
+          border-radius: 10%;
+          font-family:'Raleway';
+          font-weight: bolder;
+          box-sizing: border-box;
 
-a {
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.boton:hover {
-    background-color: rgb(70, 13, 70);
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-}
+          display: block;
+      }
+      #login p {
+          font-size: 1.5rem;
+          text-align: center;
+          text-transform: uppercase;
+      }
+      
+      div.usuario  {
+          width: 50%;
+          margin-left: 20%;
+          margin-right: 20%;
+      }
+      div.password {
+          width: 50%;
+          margin-left: 20%;
+          margin-right: 20%;
+      }
+      
+      #usuario {
+          margin-bottom: 20px;
+      }
+      
+      #password {
+          margin-bottom: 20px;
+      }
+      .boton {
+          padding: 10px 15px;
+          border-radius: 45%;
+          color: white;
+          background-color: rgb(117, 25, 117);
+          display: block;
+          width: 25%;
+          text-align: center;
+          margin-top: 45px;
+          margin-left: auto;
+          margin-right: auto;
+          -webkit-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+          font-size: 13.5px;
+      }
+      
+      a {
+          text-transform: uppercase;
+          text-decoration: none;
+      }
+      
+      .boton:hover {
+          background-color: rgb(70, 13, 70);
+          -webkit-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+      }
+  
+  
+  
+  
+  
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+   * Extends the .sr-only class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    `contenteditable` attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that receive the `clearfix` class.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: " ";
+    display: table;
+  }
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+      display: table-header-group;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
