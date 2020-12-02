@@ -130,7 +130,7 @@
           border-radius: 10%;
           font-family:'Raleway';
           font-weight: bolder;
-          box-sizing: border-box;
+        
 
           display: block;
       }
@@ -141,26 +141,25 @@
       }
       
       div.usuario  {
-          width: 50%;
-          margin-left: 20%;
-          margin-right: 20%;
+          text-align: center;      
       }
       div.password {
-          width: 50%;
-          margin-left: 20%;
-          margin-right: 20%;
+          text-align: center;
       }
       
       #usuario {
-          margin-bottom: 20px;
+          width: fit-content;
+          margin-bottom: 30px;
       }
       
       #password {
-          margin-bottom: 20px;
+          width: fit-content;
+          margin-bottom: 30px;
       }
+
       .boton {
           padding: 10px 15px;
-          border-radius: 45%;
+          border-radius: 5%;
           color: white;
           background-color: rgb(117, 25, 117);
           display: block;
